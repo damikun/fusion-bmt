@@ -41,11 +41,11 @@ export type Evaluation = {
   createDate: Date
   id: string
   name: string
-  participants: [Participant]
+  participants: Participant[]
   progression: Progression
   project: Project
   projectId: string
-  questions: [Question]
+  questions: Question[]
 }
 
 export type Mutation = {
@@ -95,7 +95,7 @@ export enum Progression {
 
 export type Project = {
   createDate: Date
-  evaluations: [Evaluation]
+  evaluations: Evaluation[]
   fusionProjectId: string
   id: string
 }
